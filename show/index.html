@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="baidu-site-verification" content="KO6S3jtigf" />
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="apple-mobile-app-status-bar-style" content="black" />
+  <meta name="apple-touch-fullscreen" content="YES" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <title>展示 | 樱之音口琴协会</title>
+  <meta name="author" content="IwYvI">
+  <meta name="description" content="武汉大学樱之音口琴协会">
+  <meta name="keywords" content="樱之音,口琴协会,樱之音口琴协会,武汉大学樱之音口琴协会">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://soundofsakura.github.io//show/">
+  <link rel="alternate" type="application/rss+xml" title="樱之音口琴协会" href="https://soundofsakura.github.io//feed.xml">
+</head>
+
+
+  <body>
+
+    <div class="background">
+  <div class="ribbon"></div>
+  <div class="tableCard"></div>
+</div>
+<div class="nav">
+  <table>
+    <tr>
+      <td><a href="/" rel="nofollow">首页</a></td>
+      <td><a href="/archives/" rel="bookmark">文章</a></td>
+      <td><a href="/show/" rel="bookmark">展示</a></td>
+      <td><a href="/about/" rel="bookmark">关于</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<div class="container">
+  <div class="header">
+    <div class="headerBackground">
+      <div class="headerBackgroundImg"></div>
+    </div>
+    <div class="headerContent">
+      <div class="avatar" alt="avatar">
+        <a href="/">
+          <img src="http://7xsaq2.com1.z0.glb.clouddn.com/img/logo2.jpg" alt="avatar">
+        </a>
+      </div>
+      <div class="blogTitle">
+        <h1>樱之音口琴协会</h1>
+        <p>口琴吟唱着的樱花绽放之音</p>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="mainBackground">
+      <div class="mainBackgroundLeft"></div>
+      <div class="mainBackgroundRight">
+        <div class="mainBackgroundCode">
+<!-- 这段代码是从电影《极乐空间》空站重新启动的代码，原文在《Intel Architecture Software Developer’s Manual Volume 3: System Programming》8-24页 -->
+          <pre>; fixup GDT base in descriptor
+ MOV ECX,EDX
+ MOV [EDX].bas_0_15+GDT_DESC_OFF,CX
+ ROR ECX,16
+ MOV [EDX].bas_16_23+GDT_DESC_OFF,CL
+ MOV [EDX].bas_24_31+GDT_DESC_OFF,CH
+
+ ; copy EPROM IDT to ram at:
+ ; RAM_START+size(STARTUP_DATA)+SIZE (EPROM GDT)
+ MOV ECX, CS_BASE
+ ADD ECX, OFFSET (IDT_EPROM)
+ MOV ESI, [ECX].table_linear
+ MOV EDI,EAX
+ MOVZX ECX, [ECX].table_lim
+ MOV APP_IDT_ram[EBX].table_lim,CX
+ INC ECX
+ MOV APP_IDT_ram[EBX].table_linear,EAX
+ MOV EBX,EAX
+ ADD EAX,ECX
+ REP MOVS BYTE PTR ES:[EDI],BYTE PTR DS:[ESI]</pre>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mainContent">
+        <div class="largeCard">
+	<div class="largeCardContent">
+	    <h2>展示</h2>
+	    <div class="largeCardDetail">
+	    			<ul class="largeCardList">
+			<li>
+			    	<a href="###"><p>展示什么</p></a>
+			</li>
+
+		</ul>
+
+
+	    </div>
+  	</div>
+</div>
+
+    </div>
+
+      </div>
+  <div class="footer">
+    <!-- <div class="link">
+      
+        <a href="https://github.com/soundofsakura"><img src="http://7xsaq2.com1.z0.glb.clouddn.com/img%2Fgithub.png" height="32" width="32" alt=""></a>
+      
+    </div> -->
+    <div class="copyright">
+      <p>Copyright © 2016, Content By <a href="https://github.com/soundofsakura">樱之音口琴协会</a>. All Rights Reserved.
+      </p>
+      <p>Theme By <a href="https://github.com/IwYvI">IwYvI</a></p>
+    </div>
+  </div>
+</div>
+
+	<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+  </body>
+
+</html>
