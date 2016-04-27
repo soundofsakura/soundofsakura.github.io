@@ -6,50 +6,56 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	
 	<url>
+	  <loc>https://soundofsakura.github.io//2016luojiahaoqinyin/</loc>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
+	  <changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
 	  <loc>https://soundofsakura.github.io//404</loc>
-	  <lastmod>2016-04-01 12:26:07 +0800</lastmod>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
 	  <changefreq>weekly</changefreq>
 	</url>
 	
 	<url>
 	  <loc>https://soundofsakura.github.io//about/</loc>
-	  <lastmod>2016-04-01 12:26:07 +0800</lastmod>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
 	  <changefreq>weekly</changefreq>
 	</url>
 	
 	<url>
 	  <loc>https://soundofsakura.github.io//archives/</loc>
-	  <lastmod>2016-04-01 12:26:07 +0800</lastmod>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
 	  <changefreq>weekly</changefreq>
 	</url>
 	
 	<url>
 	  <loc>https://soundofsakura.github.io//feed.xml</loc>
-	  <lastmod>2016-04-01 12:26:07 +0800</lastmod>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
 	  <changefreq>weekly</changefreq>
 	</url>
 	
 	<url>
 	  <loc>https://soundofsakura.github.io//</loc>
-	  <lastmod>2016-04-01 12:26:07 +0800</lastmod>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
 	  <changefreq>weekly</changefreq>
 	</url>
 	
 	<url>
 	  <loc>https://soundofsakura.github.io//css/main.css</loc>
-	  <lastmod>2016-04-01 12:26:07 +0800</lastmod>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
 	  <changefreq>weekly</changefreq>
 	</url>
 	
 	<url>
 	  <loc>https://soundofsakura.github.io//show/</loc>
-	  <lastmod>2016-04-01 12:26:07 +0800</lastmod>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
 	  <changefreq>weekly</changefreq>
 	</url>
 	
 	<url>
 	  <loc>https://soundofsakura.github.io//sitemap.xml</loc>
-	  <lastmod>2016-04-01 12:26:07 +0800</lastmod>
+	  <lastmod>2016-04-27 21:16:18 +0800</lastmod>
 	  <changefreq>weekly</changefreq>
 	</url>
 	

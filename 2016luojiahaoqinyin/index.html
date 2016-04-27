@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="apple-mobile-app-status-bar-style" content="black" />
+  <meta name="apple-touch-fullscreen" content="YES" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="keywords" content="樱之音口琴协会,樱之音,樱之音口琴社,口琴,武汉大学,2016珞珈好琴音">
+  <meta name="Description" content="2016珞珈好琴音。口琴比赛，本周五晚7点信部大活，正式开赛">
+  <title>珞珈好琴音</title>
+  <style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong,sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent; }
+:focus {
+  outline: 0; }
+a {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-decoration: none; }
+
+html,body{
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  overflow: hidden;
+}
+#main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+#mainBox{
+  text-align: center;
+  font-size: 2rem;
+  font-family: "微软雅黑";
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: moxing;
+  animation-name: moxing;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+}
+
+#mainBox div{
+  transition: all 0.5s ease;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+#club{
+  font-size: 2.5rem;
+  animation-delay: 0.5s;
+}
+#title{
+  font-size: 4rem;
+  animation-delay: 1.3s;
+}
+#subtitle{
+  font-size: 1.5rem;
+  animation-delay: 2.3s;
+}
+#position{
+  font-size: 3rem;
+  animation-delay: 3.3s;
+}
+#time{
+  font-size: 3rem;
+  animation-delay: 4.3s;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes moxing{
+  0% {
+    text-shadow: 3px 3px 3px white;
+    transform: rotate(0) scale(1);
+    color: black;
+  }
+  20% {
+    transform: rotate(360deg) scale(2);
+    color: cyan;
+  }
+  50% {
+    transform: rotate(360deg) scale(1);
+  }
+  80%{
+    transform: rotate(360deg) scale(1);
+  }
+  100% {
+    text-shadow: 3px 3px 3px white;
+    transform: rotate(0deg) scale(1);
+    color: blue;
+  }
+}
+@media (max-width: 1000px){
+html{
+  font-size: 20px;
+}
+}
+@media (max-width: 600px){
+html{
+  font-size: 12px;
+}
+}
+
+
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="mainBox">
+      <div id="club">樱之音口琴协会</div>
+      <div id="title">珞珈好琴音</div>
+      <div id="subtitle">口琴大赛，一触即发</div>
+      <div id="position">信部大活</div>
+      <div id="time">2016.4.29 19:00</div>
+    </div>
+  </div>
+<script>
+  var YELLOWMIN = 5,
+      YELLOWMAX = 15,
+      GREENMIN = 10,
+      GREENMAX = 20,
+      SPEED = 1;
+  var yellowPart = YELLOWMIN;
+  var yellowPartToggle = true;
+  var greenPartToggle = true;
+  var greenPart = GREENMIN;
+  setTimeout(function(){
+    setInterval(function(){
+      if(yellowPartToggle){
+        yellowPart+=SPEED;
+        if(yellowPart>YELLOWMAX){
+          yellowPartToggle = false;
+        }
+      }else{
+        yellowPart-=SPEED;
+        if(yellowPart<YELLOWMIN){
+          yellowPartToggle = true;
+        }
+      }
+      if(greenPartToggle){
+        greenPart+=SPEED;
+        if(greenPart > GREENMAX){
+          greenPartToggle = false;
+        }
+      }else{
+        greenPart-=SPEED;
+        if(greenPart < GREENMIN){
+          greenPartToggle = true;
+        }
+      }
+      document.getElementById('main').setAttribute("style","background: repeating-radial-gradient(red, yellow " + yellowPart + "%, green " + greenPart + "%");
+    },30);
+  },7000);
+
+</script>
+</body>
+</html>
+
