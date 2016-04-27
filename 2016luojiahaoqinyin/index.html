@@ -97,6 +97,19 @@ html,body{
   -webkit-animation-delay: 4.3s;
   animation-delay: 4.3s;
 }
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -110,7 +123,33 @@ html,body{
     transform: none;
   }
 }
-
+@-webkit-keyframes moxing{
+  0% {
+    text-shadow: 3px 3px 3px white;
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    color: black;
+  }
+  20% {
+    -webkit-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2);
+    color: cyan;
+  }
+  50% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+  80%{
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+  100% {
+    text-shadow: 3px 3px 3px white;
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    color: blue;
+  }
+}
 @keyframes moxing{
   0% {
     text-shadow: 3px 3px 3px white;
